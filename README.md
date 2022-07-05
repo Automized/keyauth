@@ -23,3 +23,9 @@
 
 -   A brain
 -   Nodejs installed (https://nodejs.org)
+
+<br />
+<br />
+<br />
+<br />
+<img src="https://i.imgur.com/m7LEEA5.png" alt="Logo">
