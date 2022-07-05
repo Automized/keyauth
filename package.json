@@ -1,0 +1,33 @@
+{
+  "name": "keyauth",
+  "version": "1.0.2",
+  "description": "Keyauth version 1.0 that includes and demo and requests are encrypted using aes.",
+  "main": "keyauth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automized/Keyauth-Nodejs-v1.git"
+  },
+  "keywords": [
+    "keyauth",
+    "keyauth-api",
+    "keyauth-example",
+    "nodejs",
+    "encryption"
+  ],
+  "author": "Automized",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automized/Keyauth-Nodejs-v1/issues"
+  },
+  "homepage": "https://github.com/Automized/Keyauth-Nodejs-v1#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "os": "^0.1.2",
+    "uuid": "^8.3.2"
+  }
+}
