@@ -29,3 +29,40 @@
 <br />
 <br />
 <img src="https://i.imgur.com/m7LEEA5.png" alt="Logo">
+
+### Example
+
+```js
+const Keyauth = require('keyauth');
+const path = require('path');
+const fs = require('fs');
+const { createHash } = require('crypto');
+
+function check_sum() {
+    let filename = path.basename(__filename) 
+
+    if(!fs.existsSync(filename)) {
+        filename = filename.replace(path.extname(filename), '.exe')
+    }
+
+    const content = fs.readFileSync(filename, 'binary')
+    
+    const md5 = createHash('md5').update(content).digest('hex')
+    return md5
+}
+
+(async() => {
+    const keyauth = new Keyauth(
+        '', //application name
+        '', //owner id
+        '', //application secret
+        '1.0', //version
+        check_sum()
+    );
+    
+    const app_info = await keyauth.initialize()
+
+    console.log(app_info)
+})()
+
+```
