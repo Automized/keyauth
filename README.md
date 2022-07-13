@@ -11,7 +11,7 @@
     Keyauth V1.0 api wrapper in nodejs that includes requests being encrypted using aes.
     <br />
     <br />
-    <a href="https://discord.gg/ptools">Discord & Support Server</a>
+    <a href="https://discord.gg/socket">Discord & Support Server</a>
     .
     <a href="https://keyauth.win">Keyauth</a>
   </p>
